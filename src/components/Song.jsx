@@ -2,28 +2,34 @@ import React from "react";
 
 function Song(props) {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-around",
-        border: "1px solid black",
-        margin: "20px 20px",
-        alignItems: "center",
-      }}
-    >
+    <div className="songindi">
+      <img src={props.thumbnailUrl} alt={props.thumbnailUrl}></img>
       <div
-        style={{ margin: "20px 20px", maxWidth: "400px", textAlign: "left" }}
+        style={{
+          margin: "20px 20px",
+          maxWidth: "600px",
+          textAlign: "left",
+          boxShadow: "0px 0px 5px 5px #9572cc",
+          borderRadius: "20px",
+          padding: "10px",
+        }}
       >
-        <ul>
-          <li>Song Title:{props.title} </li>
-          <li>ALbum:{props.albumId}</li>
+        <ul className="songsText">
+          <li>
+            <span>{props.id}</span> {props.title}{" "}
+          </li>
         </ul>
       </div>
 
-      <img src={props.thumbnailUrl} alt={props.thumbnailUrl}></img>
-
       <div>
-        <button>Delete</button>
+        <button
+          style={{ width: "140px", fontSize: "18px" }}
+          onClick={() => {
+            props.deleteSong(props.id);
+          }}
+        >
+          Delete
+        </button>
       </div>
     </div>
   );

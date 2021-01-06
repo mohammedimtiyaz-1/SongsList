@@ -18,12 +18,15 @@ function PlayListsList(props) {
           display: "flex",
           flexDirection: "column",
           margin: "20px 20px",
+
+          margin: "1% 21% 2% 21%",
         }}
       >
         {props.list &&
           props.list.map((play) => (
             <PlayListsItem
               id={play.name}
+              key={play.name + play.create}
               name={play.name}
               created={play.create}
               onPlaylistSelect={onPlaylistSelect}
@@ -34,6 +37,7 @@ function PlayListsList(props) {
   };
 
   useEffect(() => {
+    if (selected !== null) props.displayCreate(false);
     const l = props.list && props.list.filter((e) => e.name === selected);
 
     setSelectedplayList(l);
@@ -44,7 +48,9 @@ function PlayListsList(props) {
       {!selected ? (
         display()
       ) : (
-        <PlayListSongs name={selected} list={selectedplayList} />
+        <div>
+          <PlayListSongs name={selected} list={selectedplayList} />
+        </div>
       )}
     </div>
   );

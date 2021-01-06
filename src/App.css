@@ -6,10 +6,10 @@ img {
   border-radius: 40%;
 }
 
-li {
+/* li {
   font-weight: bold;
   text-align: left;
-}
+} */
 
 input[type="search"] {
   border-radius: 20px;
@@ -63,5 +63,61 @@ button:focus {
 }
 
 body {
-  background-color: rgb(138, 183, 194);
+  border: border-box;
+  background-color: #6c0ee0;
+  /* background: linear-gradient(-155deg, #7720e0 55%, #1ecea8 115%); */
+}
+
+.songsText {
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  list-style-type: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.indiSong {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.songindi {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+  justify-content: space-around;
+  margin: 1% 21% 0.5% 21%;
+  align-items: center;
+  padding: 13px;
+}
+.createPlaylist {
+  display: flex;
+  position: relative;
+  margin: 0px 21% 0px 21%;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  justify-content: flex-end;
+}
+.createButton {
+  position: absolute;
+  left: 0;
+}
+.addcontainer {
+  margin: 0 21% 0 21%;
+  display: grid;
+  grid-template-columns: 15% 83%;
+  justify-content: space-between;
+}
+.songtextcontainer {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: center;
+}
+.ShuffleButton {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 21% 0 21%;
+}
+.playlistSongContainer {
+  margin: 2% 21% 0 21%;
+  border-top: 2px solid rgb(235, 222, 222);
+  box-shadow: inset 0px 4px 3px -3px rgb(235, 222, 222);
 }

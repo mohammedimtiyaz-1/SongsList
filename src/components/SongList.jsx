@@ -3,8 +3,8 @@ import Song from "./Song";
 
 function SongList(props) {
   return (
-    <div style={{ display: "flex", flexDirection: "column" }}>
-      {props.list &&
+    <div className="indiSong">
+      {props.list.length !== 0 ? (
         props.list.map((ele) => (
           <Song
             id={ele.id}
@@ -13,8 +13,12 @@ function SongList(props) {
             thumbnailUrl={ele.thumbnailUrl}
             url={ele.url}
             albumId={ele.albumId}
+            deleteSong={props.deleteSong}
           />
-        ))}
+        ))
+      ) : (
+        <p>No Results for this search</p>
+      )}
     </div>
   );
 }
