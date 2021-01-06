@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mohammedimtiyaz-1/SongsList/static/css/main.91b86665.chunk.css",
+    "main.js": "/mohammedimtiyaz-1/SongsList/static/js/main.2152ca5b.chunk.js",
+    "main.js.map": "/mohammedimtiyaz-1/SongsList/static/js/main.2152ca5b.chunk.js.map",
+    "runtime-main.js": "/mohammedimtiyaz-1/SongsList/static/js/runtime-main.b3c036e9.js",
+    "runtime-main.js.map": "/mohammedimtiyaz-1/SongsList/static/js/runtime-main.b3c036e9.js.map",
+    "static/js/2.e19708b4.chunk.js": "/mohammedimtiyaz-1/SongsList/static/js/2.e19708b4.chunk.js",
+    "static/js/2.e19708b4.chunk.js.map": "/mohammedimtiyaz-1/SongsList/static/js/2.e19708b4.chunk.js.map",
+    "static/js/3.21779d44.chunk.js": "/mohammedimtiyaz-1/SongsList/static/js/3.21779d44.chunk.js",
+    "static/js/3.21779d44.chunk.js.map": "/mohammedimtiyaz-1/SongsList/static/js/3.21779d44.chunk.js.map",
+    "index.html": "/mohammedimtiyaz-1/SongsList/index.html",
+    "static/css/main.91b86665.chunk.css.map": "/mohammedimtiyaz-1/SongsList/static/css/main.91b86665.chunk.css.map",
+    "static/js/2.e19708b4.chunk.js.LICENSE.txt": "/mohammedimtiyaz-1/SongsList/static/js/2.e19708b4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b3c036e9.js",
+    "static/js/2.e19708b4.chunk.js",
+    "static/css/main.91b86665.chunk.css",
+    "static/js/main.2152ca5b.chunk.js"
+  ]
+}
