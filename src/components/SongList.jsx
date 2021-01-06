@@ -4,7 +4,7 @@ import Song from "./Song";
 function SongList(props) {
   return (
     <div className="indiSong">
-      {props.list.length !== 0 ? (
+      {props.list && props.list.length !== 0 ? (
         props.list.map((ele) => (
           <Song
             id={ele.id}
